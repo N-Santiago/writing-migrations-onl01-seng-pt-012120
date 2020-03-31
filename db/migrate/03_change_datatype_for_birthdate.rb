@@ -8,7 +8,7 @@ class ChangeDatatypeForBirthdate < ActiveRecord::Migration[5.1]
 
   def down
     change_table :students do |t|
-      t.change :birthdate, :string
+      t.change :birthdate, :datetime
     end
   end
   
